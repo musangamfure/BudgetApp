@@ -9,8 +9,8 @@ class GroupsController < ApplicationController
 
   # GET /groups/1 or /groups/1.json
   def show
-   @group = current_user.groups.includes(:bills).order('id DESC').find(params[:id])
-   @title = @group.name
+    @group = current_user.groups.includes(:bills).order('id DESC').find(params[:id])
+    @title = @group.name
   end
 
   # GET /groups/new
