@@ -1,7 +1,6 @@
 class BillsController < ApplicationController
   before_action :set_bill, only: %i[show edit update destroy]
 
-
   def index
     @bills = current_user.bills.all
   end
@@ -53,7 +52,6 @@ class BillsController < ApplicationController
   end
 
   private
-
 
   def set_bill
     @bill = Bill.find(params[:id])
