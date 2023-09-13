@@ -3,4 +3,3 @@ class Group < ApplicationRecord
   has_many :bills, dependent: :destroy
   belongs_to :user
 end
-end

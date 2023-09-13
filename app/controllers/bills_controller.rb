@@ -1,25 +1,22 @@
 class BillsController < ApplicationController
   before_action :set_bill, only: %i[show edit update destroy]
 
-  
+
   def index
     @bills = current_user.bills.all
   end
 
-  
- def show
+  def show
     @bill = current_user.bills.find(params[:id])
   end
- 
+
   def new
     @bill = Bill.new
     @group_id = params[:group_id]
   end
 
-
   def edit; end
 
-  
   def create
     @bill = current_user.bills.new(bill_params)
 
@@ -34,7 +31,6 @@ class BillsController < ApplicationController
     end
   end
 
-
   def update
     respond_to do |format|
       if @bill.update(bill_params)
@@ -46,7 +42,6 @@ class BillsController < ApplicationController
       end
     end
   end
-
 
   def destroy
     @bill.destroy
@@ -63,7 +58,6 @@ class BillsController < ApplicationController
   def set_bill
     @bill = Bill.find(params[:id])
   end
-
 
   def bill_params
     params.require(:bill).permit(:name, :amount, :group_id, :description)
