@@ -4,7 +4,7 @@ class GroupsController < ApplicationController
   # GET /groups or /groups.json
   def index
     @groups = current_user.groups.includes(:bills).all.order('id DESC')
-    @title = 'Transactions'
+    @title = 'Categories'
   end
 
   # GET /groups/1 or /groups/1.json
