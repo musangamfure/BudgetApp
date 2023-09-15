@@ -21,6 +21,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_13_171754) do
     t.datetime "updated_at", null: false
     t.bigint "author_id", null: false
     t.bigint "group_id", null: false
+    t.string "description"
     t.index ["author_id"], name: "index_bills_on_author_id"
     t.index ["group_id"], name: "index_bills_on_group_id"
   end
