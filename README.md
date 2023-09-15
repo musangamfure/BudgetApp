@@ -67,7 +67,7 @@
 
  - [Live Demo Link](https://budgetify-xp7b.onrender.com/)
 
- - [Presentation Loom Video]()
+ - [Presentation Loom Video](https://www.loom.com/share/66c8a10a109f48fa96cf74a2b6ff88a5?sid=e7208321-c4dd-4484-b23b-451e836ba801)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
