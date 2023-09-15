@@ -65,7 +65,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
- - [Live Demo Link](https://budgetify-jhek.onrender.com/)
+ - [Live Demo Link](https://budgetify-xp7b.onrender.com/)
 
  - [Presentation Loom Video]()
 
