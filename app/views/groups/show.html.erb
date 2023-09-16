@@ -1,7 +1,4 @@
 <p style="color: green"><%= notice %></p>
-<div class="px-3 d-flex justify-content-end mb-3">
-  Total: $<%= @group.bills.inject(0){ |sum, bill| sum + bill.amount.to_i } %>
-</div>
 <%= render @group %>
 <div class="container-fluid d-flex mb-3">
   <% if can? :update, @group %>
@@ -16,4 +13,3 @@
 <div class="bg-green p-3 w-100 position-fixed bottom-0">
   <%= link_to "Add a New bill", new_group_bill_path(@group.id), class: 'btn bg-green fw-bold col-12 text-uppercase' %>
 </div>
-
