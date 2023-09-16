@@ -50,7 +50,7 @@ a {
 }
 
 .bg-green .btn {
-  border: 2px solid var(--white);
+  border: 1px solid var(--white);
 }
 
 nav ul a {
@@ -83,7 +83,7 @@ form .form-group .form-control {
 
 .box-card {
   border: 1px solid var(--darkgray);
-  box-shadow: 2px 2px 5px var(--darkgray);
+  box-shadow: 2px 2px 6px var(--darkgray);
 }
 
 .mobile-menu {
@@ -101,7 +101,7 @@ form .form-group .form-control {
 }
 
 ul .menu-slide {
-  width: 80%;
+  width: 60%;
   padding: 20px;
 }
 

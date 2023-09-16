@@ -62,7 +62,6 @@ class GroupBillsController < ApplicationController
     @group_bill = GroupBill.find(params[:id])
   end
 
-  # Only allow a list of trusted parameters through.
   def group_bill_params
     params.require(:group_bill).permit(:group_id, :bill_id)
   end
