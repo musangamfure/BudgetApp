@@ -15,8 +15,6 @@
   <%= link_to "Back to bills", group_path(@bill.group_id), class: '' %>
   <% if can? :destroy, @bill %>
     <div class="mx-2">|</div>
- <%= button_to "Delete this bill", group_bill_path(@bill.group_id, @bill), method: :delete, class: 'border-0 text-primary' %>
+    <%= button_to "Delete this bill", group_bill_path(@bill.group_id, @bill), method: :delete, class: 'border-0 text-primary' %>
   <% end %>
 </div>
-
-
