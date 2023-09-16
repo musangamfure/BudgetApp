@@ -4,7 +4,7 @@ class GroupsController < ApplicationController
   # GET /groups or /groups.json
   def index
     @groups = current_user.groups.includes(:bills).all.order('id DESC')
-    @title = 'Categories'
+    @title = 'Transactions'
   end
 
   # GET /groups/1 or /groups/1.json
@@ -13,15 +13,12 @@ class GroupsController < ApplicationController
     @title = @group.name
   end
 
-  # GET /groups/new
   def new
     @group = Group.new
   end
 
-  # GET /groups/1/edit
   def edit; end
 
-  # POST /groups or /groups.json
   def create
     @group = current_user.groups.new(group_params)
 
@@ -36,7 +33,6 @@ class GroupsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /groups/1 or /groups/1.json
   def update
     respond_to do |format|
       if @group.update(group_params)
@@ -49,7 +45,6 @@ class GroupsController < ApplicationController
     end
   end
 
-  # DELETE /groups/1 or /groups/1.json
   def destroy
     @group.destroy
 
@@ -61,12 +56,10 @@ class GroupsController < ApplicationController
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
   def set_group
     @group = Group.find(params[:id])
   end
 
-  # Only allow a list of trusted parameters through.
   def group_params
     params.require(:group).permit(:name, :icon, :description)
   end
